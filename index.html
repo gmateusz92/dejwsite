@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Responsive Site</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo" onclick="document.querySelector('#home').scrollIntoView({ behavior: 'smooth' })">xxxxxffff</div>
+        <ul class="main_nav">
+            <li><a href="#products" class="lang en">Products</a><a href="#products" class="lang nl hidden">Producten</a></li>
+            <li><a href="#gallery" class="lang en">Gallery</a><a href="#gallery" class="lang nl hidden">Galerij</a></li>
+            <li><a href="#contact" class="lang en">Contact</a><a href="#contact" class="lang nl hidden">Contact</a></li>
+        </ul>
+        <div class="flags">
+            <img src="images/eng.png" alt="English" onclick="setLanguage('en')">
+            <img src="images/nl.png" alt="Dutch" onclick="setLanguage('nl')">
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div>
+            <h2>From concept to creation</h2>
+        </div>
+    </section>
+
+    <section id="products" class="py-5">
+        <div class="container">
+            <h2 class="lang en">Our Products</h2>
+            <h2 class="lang nl hidden">Onze Producten</h2>
+            <p class="lang en">Explore our high-quality modular wall systems.</p>
+            <p class="lang nl hidden">Verken onze hoogwaardige modulaire wandsystemen.</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery py-5">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/image1.jpg" alt="Image 1">
+                    <p class="lang en">Beautiful Modular Walls</p>
+                    <p class="lang nl hidden">Prachtige modulaire muren</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/image2.jpg" alt="Image 2">
+                    <p class="lang en">Advanced Thermal Insulation</p>
+                    <p class="lang nl hidden">Geavanceerde thermische isolatie</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/image3.jpg" alt="Image 3">
+                    <p class="lang en">Custom Design Options</p>
+                    <p class="lang nl hidden">Aangepaste ontwerpmogelijkheden</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+            <p>Phone: +123 456 789</p>
+        </div>
+    </section>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
