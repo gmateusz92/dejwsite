@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Responsive Site</title>
+    <title>Dejw site</title>
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
@@ -23,16 +23,74 @@
 
     <section class="home" id="home">
         <div>
-            <h2>From concept to creation</h2>
+            <h2 class="lang en">From concept to creation</h2>
+			<h2 class="lang nl hidden">Van concept tot creatie</h2>
         </div>
     </section>
 
-    <section id="products" class="py-5">
-        <div class="container">
-            <h2 class="lang en">Our Products</h2>
-            <h2 class="lang nl hidden">Onze Producten</h2>
-            <p class="lang en">Explore our high-quality modular wall systems.</p>
-            <p class="lang nl hidden">Verken onze hoogwaardige modulaire wandsystemen.</p>
+    <section id="products" class="products-section">
+        <h2 class="lang en">Products</h2>
+        <h2 class="lang nl hidden">Producten</h2>
+        <p class="lang en">
+            Construction of multi-layer prefabricated walls used in skeletal
+            or modular construction. These walls consist of several layers of different
+            materials that together form a complete structure, ready for assembly:
+        </p>
+        <p class="lang nl hidden">
+            Bouw van meerlaagse geprefabriceerde wanden die worden
+            gebruikt in skelet- of modulaire constructies. Deze wanden bestaan uit verschillende
+            lagen van verschillende materialen die samen een complete structuur vormen,
+            klaar voor montage:
+        </p>
+        <div class="product-grid">
+            <div class="product-item">
+                <h3 class="lang en">Wooden structure</h3>
+                <h3 class="lang nl hidden">Houten structuur</h3>
+                <p class="lang en">
+                    The main building material used is specialized construction wood marked as KVH with the C24 standard.
+					The high quality of all materials guarantees durability and safety. The wooden frame is the foundation that gives the wall stability and load-bearing capacity.
+					The frame is spaced at regular intervals, usually every 60 cm, or according to a detailed technical drawing, depending on the client’s needs.
+                </p>
+                <p class="lang nl hidden">
+                    Het belangrijkste bouwmateriaal is speciaal constructiehout met het keurmerk KVH en de standaard C24.
+					De hoge kwaliteit van alle materialen garandeert duurzaamheid en veiligheid. Het houten frame is de basis die de muur stabiliteit en draagkracht geeft.
+					Het frame wordt op regelmatige afstanden geplaatst, meestal om de 60 cm, of volgens een gedetailleerde technische tekening, afhankelijk van de wensen van de klant.
+                </p>
+            </div>
+            <div class="product-item">
+                <h3 class="lang en">Thermal insulation</h3>
+                <h3 class="lang nl hidden">Thermische isolatie</h3>
+                <p class="lang en">
+                    The thermal insulation layer, mainly made of styrofoam, mineral wool, vapor barrier film, or rock wool,
+					ensures the building remains energy-efficient by preventing heat loss in winter and maintaining coolness in summer.
+					It also improves acoustic performance within the structure.
+                </p>
+                <p class="lang nl hidden">
+                    De thermische isolatielaag, voornamelijk gemaakt van piepschuim, minerale wol, dampremmende folie of rotswol,
+					zorgt ervoor dat het gebouw energie-efficiënt blijft door warmteverlies in de winter te voorkomen en in de zomer koel te blijven.
+					Het verbetert ook de akoestische prestaties binnen de structuur.
+                </p>
+            </div>
+            <div class="product-item">
+                <h3 class="lang en">Fire-resistant boards</h3>
+                <h3 class="lang nl hidden">Brandwerende platen</h3>
+                <p class="lang en">
+                    To increase fire safety, gypsum-fiber boards or other fireproof materials are placed...
+                </p>
+                <p class="lang nl hidden">Om de brandveiligheid te vergroten, worden gipsvezelplaten of andere brandwerende...</p>
+            </div>
+            <div class="product-item">
+                <h3 class="lang en">Gypsum boards</h3>
+                <h3 class="lang nl hidden">Gipsplaten</h3>
+                <p class="lang en">The gypsum boards are the standard interior finish, providing a smooth, durable surface...</p>
+                <p class="lang nl hidden">De gipsplaten zijn de standaard interieurafwerking, die een gladde, duurzame oppervlakte...</p>
+            </div>
+            <div class="product-item">
+                <h3 class="lang en">Gypsum boards</h3>
+                <h3 class="lang nl hidden">Gipsplaten</h3>
+                <p class="lang en">The gypsum boards are the standard interior finish, providing a smooth, durable surface...</p>
+                <p class="lang nl hidden">De gipsplaten zijn de standaard interieurafwerking, die een gladde, duurzame oppervlakte...</p>
+            </div>
         </div>
     </section>
 
@@ -41,17 +99,17 @@
             <h2>Gallery</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <img src="images/image1.jpg" alt="Image 1">
+                    <img src="images/image1.jpg" alt="Image 1" onclick="openModal('images/image1.jpg')">
                     <p class="lang en">Beautiful Modular Walls</p>
                     <p class="lang nl hidden">Prachtige modulaire muren</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="images/image2.jpg" alt="Image 2">
+                    <img src="images/image2.jpg" alt="Image 2" onclick="openModal('images/image2.jpg')">
                     <p class="lang en">Advanced Thermal Insulation</p>
                     <p class="lang nl hidden">Geavanceerde thermische isolatie</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="images/image3.jpg" alt="Image 3">
+                    <img src="images/image3.jpg" alt="Image 3" onclick="openModal('images/image3.jpg')">
                     <p class="lang en">Custom Design Options</p>
                     <p class="lang nl hidden">Aangepaste ontwerpmogelijkheden</p>
                 </div>
@@ -59,14 +117,24 @@
         </div>
     </section>
 
-    <section id="contact" class="py-5 bg-light">
-        <div class="container text-center">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
-            <p>Phone: +123 456 789</p>
-        </div>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+        <p>Phone: +123 456 789</p>
+        <p>Address: 123 Main Street, Cityville, Country</p>
     </section>
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" class="modal-content">
+    </div>
 
     <script src="js/scripts.js"></script>
 </body>
 </html>
+
+
+<style>
+
+
+</style>
