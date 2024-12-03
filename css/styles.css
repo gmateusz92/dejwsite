@@ -21,7 +21,7 @@ body {
 }
 
 .header .logo {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     cursor: pointer;
     margin-left: 20px;
@@ -64,15 +64,18 @@ body {
     cursor: pointer;
 }
 
+
+
 .home {
     height: 100vh;
-    background: url('images/background.jpg') no-repeat center center/cover;
+    background: url('images/3.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     text-align: center;
 }
+
 
 .home h2 {
     font-size: 3rem;
@@ -122,33 +125,28 @@ body {
 }
 
 .modal {
-    display: none;
+    display: none; /* Domyślnie ukryty */
     position: fixed;
-    z-index: 10000;
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8); /* Przyciemnione tło */
 }
 
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-.modal-content img {
-    width: 100%;
-    height: auto;
+    max-width: 90%; /* Maksymalna szerokość obrazu */
+    max-height: 90%; /* Maksymalna wysokość obrazu */
 }
 
 .close {
     position: absolute;
-    top: 15px;
-    right: 35px;
+    top: 20px;
+    right: 30px;
     color: white;
     font-size: 40px;
     font-weight: bold;
@@ -158,6 +156,8 @@ body {
 .close:hover,
 .close:focus {
     color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .hidden {
@@ -241,4 +241,68 @@ body {
 
 html {
     scroll-behavior: smooth;
+}
+
+.pricing-section {
+    padding: 50px 15px;
+    text-align: center;
+    background-color: #fff;
+    max-width: 1200px; /* Maksymalna szerokość sekcji */
+    margin: 0 auto; /* Wyśrodkowanie */
+}
+
+.pricing-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.pricing-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.pricing-details-width {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 800px; /* Ogranicza szerokość listy */
+
+}
+
+.pricing-details {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 800px; /* Ogranicza szerokość listy */
+    text-align: left; /* Wyrównuje punkty listy do lewej */
+}
+
+.pricing-details > li {
+    margin-bottom: 20px;
+}
+
+.pricing-details strong {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.pricing-details ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.pricing-details li ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.section-container {
+    max-width: 1200px; /* Szerokość taka sama jak w sekcji Products */
+    margin: 0 auto; /* Wyśrodkowanie sekcji */
+    padding: 50px 15px; /* Odstępy wewnętrzne */
+    background-color: #fff; /* Domyślne tło */
+    text-align: center; /* Wyrównanie zawartości do środka */
 }
