@@ -17,6 +17,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .header .logo {
@@ -24,13 +25,17 @@ body {
     font-weight: bold;
     cursor: pointer;
     margin-left: 20px;
+    flex-shrink: 0; /* Zapobiega zmniejszaniu logo */
 }
 
 .header .main_nav {
     display: flex;
     list-style: none;
     gap: 40px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1; /* Powoduje, że menu nawigacyjne zajmuje dostępne miejsce */
+    justify-content: flex-end; /* Wyrównuje linki do prawej */
 }
 
 .header .main_nav a {
@@ -45,11 +50,13 @@ body {
 }
 
 .header .flags {
-    margin-right: 40px;
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-left: 20px; /* Dodatkowy odstęp od nawigacji */
+    flex-shrink: 0; /* Zapobiega zmniejszaniu sekcji flag */
 }
+
 
 .flags img {
     width: 30px;
@@ -102,10 +109,12 @@ body {
 
 .gallery img {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
+    max-width: 300px; /* Określa maksymalną szerokość obrazków */
+    height: 200px; /* Stała wysokość dla schludnych miniatur */
+    object-fit: cover; /* Wypełnia kwadrat bez zniekształceń */
+    border-radius: 5px; /* Opcjonalne zaokrąglenie rogów */
+    cursor: pointer; /* Wskazuje, że obrazek jest klikalny */
+    transition: transform 0.3s ease; /* Efekt wizualny na hover */
 }
 
 .gallery img:hover {

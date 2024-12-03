@@ -8,8 +8,11 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
+
     <header class="header">
-        <div class="logo" onclick="document.querySelector('#home').scrollIntoView({ behavior: 'smooth' })">xxxxxffff</div>
+        <div class="logo" onclick="document.querySelector('#home').scrollIntoView({ behavior: 'smooth' })">
+            xxxxxffff
+        </div>
         <ul class="main_nav">
             <li><a href="#products" class="lang en">Products</a><a href="#products" class="lang nl hidden">Producten</a></li>
             <li><a href="#gallery" class="lang en">Gallery</a><a href="#gallery" class="lang nl hidden">Galerij</a></li>
@@ -22,9 +25,9 @@
     </header>
 
     <section class="home" id="home">
-        <div>
+        <div class="home-background">
             <h2 class="lang en">From concept to creation</h2>
-			<h2 class="lang nl hidden">Van concept tot creatie</h2>
+            <h2 class="lang nl hidden">Van concept tot creatie</h2>
         </div>
     </section>
 
@@ -75,21 +78,38 @@
                 <h3 class="lang en">Fire-resistant boards</h3>
                 <h3 class="lang nl hidden">Brandwerende platen</h3>
                 <p class="lang en">
-                    To increase fire safety, gypsum-fiber boards or other fireproof materials are placed...
+                    To increase fire safety, gypsum-fiber boards or other fireproof materials are placed on the insulation layer.
+					These boards slow down the spread of fire, which is especially important in modular constructions,
+                    where combustible materials are often used.
                 </p>
-                <p class="lang nl hidden">Om de brandveiligheid te vergroten, worden gipsvezelplaten of andere brandwerende...</p>
+                <p class="lang nl hidden">Om de brandveiligheid te vergroten, worden gipsvezelplaten of andere brandwerende...
+                    Om de brandveiligheid te vergroten, worden gipsvezelplaten of andere brandwerende materialen op de isolatielaag geplaatst.
+					Deze platen vertragen de verspreiding van vuur, wat vooral belangrijk is in modulaire constructies, waar vaak brandbare materialen worden gebruikt.
+                </p>
             </div>
             <div class="product-item">
                 <h3 class="lang en">Gypsum boards</h3>
                 <h3 class="lang nl hidden">Gipsplaten</h3>
-                <p class="lang en">The gypsum boards are the standard interior finish, providing a smooth, durable surface...</p>
-                <p class="lang nl hidden">De gipsplaten zijn de standaard interieurafwerking, die een gladde, duurzame oppervlakte...</p>
+                <p class="lang en">
+                    The gypsum boards are the standard interior finish, providing a smooth, durable surface suitable for painting or other finishes.
+					These boards ensure a high-quality aesthetic while also offering some soundproofing properties.
+                </p>
+                <p class="lang nl hidden">
+                    De gipsplaten zijn de standaard interieurafwerking, die een gladde, duurzame oppervlakte bieden die geschikt is voor schilderen of andere afwerkingen.
+					Deze platen zorgen voor een esthetisch hoogwaardige afwerking en bieden ook enige geluidsisolatie.
+                </p>
             </div>
             <div class="product-item">
                 <h3 class="lang en">Gypsum boards</h3>
                 <h3 class="lang nl hidden">Gipsplaten</h3>
-                <p class="lang en">The gypsum boards are the standard interior finish, providing a smooth, durable surface...</p>
-                <p class="lang nl hidden">De gipsplaten zijn de standaard interieurafwerking, die een gladde, duurzame oppervlakte...</p>
+                <p class="lang en">
+                    The outer layer of the wall is often made of cement-fiber boards (e.g., Cembrit). These boards are resistant to moisture, frost, and fire, making them ideal for exterior facades.
+					In addition to their protective function, these boards also have an aesthetic appearance and can be painted or plastered.
+                </p>
+                <p class="lang nl hidden">
+                    De buitenste laag van de muur is vaak gemaakt van cementvezelplaten (bijv. Cembrit). Deze platen zijn bestand tegen vocht, kou en brand, waardoor ze ideaal zijn voor buitengevels.
+					Naast hun beschermende functie hebben deze platen ook een esthetisch uiterlijk en kunnen ze worden geschilderd of gepleisterd.
+                </p>
             </div>
         </div>
     </section>
@@ -99,17 +119,32 @@
             <h2>Gallery</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <img src="images/image1.jpg" alt="Image 1" onclick="openModal('images/image1.jpg')">
+                    <img src="images/1.jpg" alt="Image 1" onclick="openModal('images/1.jpg')">
                     <p class="lang en">Beautiful Modular Walls</p>
                     <p class="lang nl hidden">Prachtige modulaire muren</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="images/image2.jpg" alt="Image 2" onclick="openModal('images/image2.jpg')">
+                    <img src="images/2.jpg" alt="Image 2" onclick="openModal('images/2.jpg')">
                     <p class="lang en">Advanced Thermal Insulation</p>
                     <p class="lang nl hidden">Geavanceerde thermische isolatie</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="images/image3.jpg" alt="Image 3" onclick="openModal('images/image3.jpg')">
+                    <img src="images/3.jpg" alt="Image 3" onclick="openModal('images/3.jpg')">
+                    <p class="lang en">Custom Design Options</p>
+                    <p class="lang nl hidden">Aangepaste ontwerpmogelijkheden</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/4.jpg" alt="Image 4" onclick="openModal('images/4.jpg')">
+                    <p class="lang en">Beautiful Modular Walls</p>
+                    <p class="lang nl hidden">Prachtige modulaire muren</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/5.jpg" alt="Image 5" onclick="openModal('images/5.jpg')">
+                    <p class="lang en">Advanced Thermal Insulation</p>
+                    <p class="lang nl hidden">Geavanceerde thermische isolatie</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/6.jpg" alt="Image 6" onclick="openModal('images/6.jpg')">
                     <p class="lang en">Custom Design Options</p>
                     <p class="lang nl hidden">Aangepaste ontwerpmogelijkheden</p>
                 </div>
@@ -135,6 +170,33 @@
 
 
 <style>
+.home {
+    position: relative;
+    height: 100vh; /* Sekcja zajmuje pełną wysokość ekranu */
+    width: 100%; /* Pełna szerokość */
+    overflow: hidden; /* Ukrywa nadmiar obrazka */
+}
+
+.home-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/3.jpg') no-repeat center center; /* Zmień "home.jpg" na ścieżkę do swojego obrazka */
+    background-size: cover; /* Sprawia, że obrazek pokrywa całą sekcję */
+    z-index: -1; /* Umieszcza obrazek za tekstem */
+}
+
+.home h2 {
+    position: relative;
+    color: white; /* Biały tekst, możesz dostosować */
+    text-align: center;
+    font-size: 3rem; /* Dostosuj rozmiar czcionki */
+    top: 50%;
+    transform: translateY(-50%); /* Centruje tekst pionowo */
+    z-index: 1; /* Zapewnia, że tekst jest nad obrazkiem */
+}
 
 
 </style>
